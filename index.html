@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projeto X-Men</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="stylesheet" href="./src/css/styles.css" />
+    <link rel="stylesheet" href="./src/css/responsive.css" />
+
+  </head>
+  <body>
+    <header class="header">
+      <img class="logo" src="./src/imgs/logo.svg" alt="logo" />
+    </header>
+    <main class="character-selection">
+      <section class="characters">
+        <h1 class="title">Select a character</h1>
+        <ul class="character-list">
+          <li class="character selected" id="cyclop" data-name="Cyclop" data-description="He has the power to shoot optic blasts due to an accident that happened to him when he was a child, but he can't control them.">
+            <img src="./src/imgs/card-ciclope.jpg" alt="cyclop" />
+          </li>
+          <li class="character" id="jean-grey" data-name="Jean Grey" data-description="Jean Grey is an omega-level mutant and the primary avatar of the Pheonix Force, through which she manifests cosmic powers. She possesses telepathy and telekinesis.">
+            <img src="./src/imgs/card-jean-grey.jpg" alt="jean-grey" />
+          </li>
+          <li class="character" id="shadowcat" data-name="Shadowcat" data-description="She has the power to pass through solid matter, energy fields, and optic blasts while remaining intact. She also has the ability to walk on air.">
+            <img src="./src/imgs/card-lince-negra.jpg" alt="shadowcat" />
+          </li>
+          <li class="character" id="storm" data-name="Storm" data-description="She has the power to control the forces of nature. Very powerful, she can generate lightning, rain, ice, winds, fog, and other effects.">
+            <img src="./src/imgs/card-tempestade.jpg" alt="storm" />
+          </li>
+          <li class="character" id="rogue" data-name="Rogue" data-description="She has the power to absorb the vitality and memories of people she touches, or in the case of mutants, their powers and memories, but only temporarily.">
+            <img src="./src/imgs/card-vampira.jpg" alt="rogue" />
+          </li>
+          <li class="character" id="wolverine" data-name="Wolverine" data-description="Powers. Metallic Claws. Regenerative Healing Factor. Super Agility.">
+            <img src="./src/imgs/card-wolverine.jpg" alt="wolverine" />
+          </li>
+          <li class="character" id="nightcrawler" data-name="Nightcrawler" data-description="He is a mutant who was born with a tail, pointed ears, and the power to teleport.">
+            <img src="./src/imgs/card-noturno.jpg" alt="nightcrawler" />
+          </li>
+          <li class="character" id="magneto" data-name="Magneto" data-description="He has the power of magnetokinesis, meaning he can control metal objects and create magnetic fields.">
+            <img src="./src/imgs/card-magneto.jpg" alt="magneto" />
+          </li>
+        </ul>
+      </section>
+      <section class="selected-character">
+        <img
+          class="character-photo"
+          src="./src/imgs/card-ciclope.png"
+          alt="selected-character"
+        />
+        <div class="character-info">
+          <h2 class="character-name" id="character-name">Cyclop</h2>
+          <p class="character-description" id="character-description">
+            He has the power to shoot optic blasts due to an accident that
+            happened to him when he was a child, but he can't control them.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <script src="./src/js/index.js"></script>
+  </body>
+</html>
